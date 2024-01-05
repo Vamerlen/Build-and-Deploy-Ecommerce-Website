@@ -1,22 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doudou Hardware Shop</title>
+    <script src="https://kit.fontawesome.com/927b56deba.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img\The handyman you can trust (1).png">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<body>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <section id="header">
+        <a href="#"><img src="img\The handyman you can trust (1).png" width="60px" height="60px" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-sharp fa-solid fa-rectangle-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
 
-    <body>
+    <section id="page-header" class="about-header">
+        <h2>#Let's_Talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you!</p>
+    </section>
 
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img\woodenproduct\download (23).jpeg" alt=""></td>
+                    <td>Functional Bed</td>
+                    <td>R1090.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>R1090.00</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img\woodenproduct\download (25).jpeg" alt=""></td>
+                    <td>House Bed</td>
+                    <td>R555.99</td>
+                    <td><input type="number" value="1"></td>
+                    <td>R1090.00</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img\woodenproduct\download (27).jpeg" alt=""></td>
+                    <td>Normal Bed</td>
+                    <td>R990.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>R590.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <script src="script.js"></script>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Coupon code">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>R2201.98</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>R2201.98</strong></td>
+                </tr>
+            </table>
 
-    </body>
+            <button class="normal">Proceed to Checkout</button>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>The Hardware Doudou</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <p>© 2024 Vamerlen, Favie @ The Hardware Doudou</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 
 </html>
