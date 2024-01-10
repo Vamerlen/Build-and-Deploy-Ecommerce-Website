@@ -1,0 +1,20 @@
+{
+  "name": "paypal-checkout",
+  "version": "1.0.0",
+  "description": "PayPal Checkout Example",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ejs": "^3.1.6",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^10.0.0"
+  },
+
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

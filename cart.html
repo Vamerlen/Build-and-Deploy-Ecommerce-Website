@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/927b56deba.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img\The handyman you can trust (1).png">
     <link rel="stylesheet" href="style.css">
+    <!-- Add this line in the head section of your HTML files -->
+    <script src="cart.js"></script>
 </head>
 
 <body>
@@ -32,13 +34,14 @@
         </div>
     </section>
 
-    <section id="page-header" class="about-header">
-        <h2>#Let's_Talk</h2>
-        <p>LEAVE A MESSAGE, We love to hear from you!</p>
+    <section id="page-header" class="cart-header">
+        <h2>#YourCartSomething</h2>
+        <p>Cart items here !</p>
     </section>
 
+    <!-- Add this table structure where you want to display the cart items -->
     <section id="cart" class="section-p1">
-        <table width="100%">
+        <table id="cart-table" width="100%">
             <thead>
                 <tr>
                     <td>Remove</td>
@@ -50,63 +53,20 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
-                    <td><img src="img\woodenproduct\download (23).jpeg" alt=""></td>
-                    <td>Functional Bed</td>
-                    <td>R1090.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>R1090.00</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
-                    <td><img src="img\woodenproduct\download (25).jpeg" alt=""></td>
-                    <td>House Bed</td>
-                    <td>R555.99</td>
-                    <td><input type="number" value="1"></td>
-                    <td>R1090.00</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
-                    <td><img src="img\woodenproduct\download (27).jpeg" alt=""></td>
-                    <td>Normal Bed</td>
-                    <td>R990.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>R590.00</td>
-                </tr>
+                <!-- Cart items will be dynamically added here -->
             </tbody>
         </table>
-    </section>
 
-    <section id="cart-add" class="section-p1">
-        <div id="coupon">
-            <h3>Apply Coupon</h3>
-            <div>
-                <input type="text" placeholder="Enter Coupon code">
-                <button class="normal">Apply</button>
-            </div>
-        </div>
         <div id="subtotal">
             <h3>Cart Total</h3>
             <table>
                 <tr>
-                    <td>Cart Subtotal</td>
-                    <td>R2201.98</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>R2201.98</strong></td>
+                    <td>Total:</td>
+                    <td id="cart-total">R0.00</td>
                 </tr>
             </table>
-
-            <button class="normal">Proceed to Checkout</button>
-
+            <button class="normal"><a href="server/checkout.html">Proceed to Checkout</a></button>
         </div>
-
     </section>
 
     <footer class="footer">
@@ -154,7 +114,9 @@
         </div>
     </footer>
 
+    <script scr="main.js"></script>
     <script src="script.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=Af05d1imY5pASdXESVPqrodcqUqd51QvZbHzK1XvlunDseisojYkjVQ-vj0vkLBiZvjIU2X5TMzOJKYr&currency=USD"></script>
 </body>
 
 </html>

@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/927b56deba.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img\The handyman you can trust (1).png">
     <link rel="stylesheet" href="style.css">
+    <!-- Add this line in the head section of your HTML files -->
+    <script src="cart.js"></script>
 </head>
 
 <body>
@@ -38,10 +40,9 @@
     </section>
 
     <section id="product1" class="section-p1">
-
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='sproduct.html'">
-                <img src="img\woodenproduct\download (1).jpeg" alt="Product">
+            <div class="pro">
+                <img src="img\woodenproduct\1.png" alt="Product">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Chair 1</h5>
@@ -54,14 +55,11 @@
                     </div>
                     <h4>R85.00</h4>
                 </div>
-
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+                <button onclick="addToCart('Chair 1', 85.00, 'img/woodenproduct/1.png')">Add to Cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (2).jpeg" alt="Product">
-                <div class="des" onclick="window.location.href='sproduct.html';">
+                <img src="img\woodenproduct\2.png" alt="Product">
+                <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Chair 2</h5>
                     <div class="star">
@@ -71,15 +69,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>R200.00</h4>
+                    <h4>R95.00</h4>
                 </div>
-
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+                <button type="button" onclick="addToCart('Chair 2', 95.00, 'img/woodenproduct/2.png')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (3).jpeg" width="300px" height="300px" alt="Product">
+                <img src="img\woodenproduct\3.png">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Chair 3</h5>
@@ -90,15 +85,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>R158.00</h4>
+                    <h4>R58.00</h4>
                 </div>
-
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+                <button type="button" onclick="addToCart('Chair 3', 58.00, 'img/woodenproduct/3.png')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (4).jpeg" width="300px" height="300px" alt="Product">
+                <img src="img\woodenproduct\4.png">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Chair 4</h5>
@@ -111,13 +103,10 @@
                     </div>
                     <h4>R50.00</h4>
                 </div>
-
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+                <button type="button" onclick="addToCart('Chair 4', 50.00, 'img/woodenproduct/4.png')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (5).jpeg" width="250px" height="250px" alt="Product">
+                <img src="img\woodenproduct\5.png" width="250px" height="250px" alt="Product">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Chair 5</h5>
@@ -131,12 +120,59 @@
                     <h4>R90.00</h4>
                 </div>
 
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+
+                <button type="button" onclick="addToCart('Chair 5', 90.00, 'img/woodenproduct/5.png')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (6).jpeg" width="250px" height="250px" alt="Product">
+                <img src="img\woodenproduct\6.png" width="250px" height="250px" alt="Product">
+                <div class="des">
+                    <span>The DKK Hardware</span>
+                    <h5>Chair 6</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>R78.00</h4>
+                </div>
+                <button type="button" onclick="addToCart('Chair 6', 78.00, 'img/woodenproduct/6.png')">Add to cart</button>
+            </div>
+            <div class="pro">
+                <img src="img\woodenproduct\7.png" width="250px" height="250px" alt="Product">
+                <div class="des">
+                    <span>The DKK Hardware</span>
+                    <h5>Chair 7</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>R75.00</h4>
+                </div>
+                <button type="button" onclick="addToCart('Chair 7', 75.00, 'img/woodenproduct/7.png')">Add to cart</button>
+            </div>
+            <div class="pro">
+                <img src="img\woodenproduct\8.png" width="250px" height="250px" alt="Product">
+                <div class="des">
+                    <span>The DKK Hardware</span>
+                    <h5>Chair 8</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>R100.00</h4>
+                </div>
+                <button type="button" onclick="addToCart('Chair 8', 100.00, 'img/woodenproduct/8.png')">Add to cart</button>
+            </div>
+            <div class="pro">
+                <img src="img\woodenproduct\download (7).jpeg" alt="Product">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Table 1</h5>
@@ -147,15 +183,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>R78.00</h4>
+                    <h4>R65.00</h4>
                 </div>
 
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+
+                <button type="button" onclick="addToCart('Table 1', 65.00, 'img/woodenproduct/download (7).jpeg')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (7).jpeg" width="250px" height="250px" alt="Product">
+                <img src="img\woodenproduct\download (8).jpeg" alt="Product">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Table 2</h5>
@@ -166,15 +201,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>R75.00</h4>
+                    <h4>R550.00</h4>
                 </div>
 
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+
+                <button type="button" onclick="addToCart('Table 2', 550.00, 'img/woodenproduct/download (7).jpeg')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (8).jpeg" width="250px" height="250px" alt="Product">
+                <img src="img\woodenproduct\download (10).jpeg" alt="Product">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Table 3</h5>
@@ -185,15 +219,14 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>R100.00</h4>
+                    <h4>R108.00</h4>
                 </div>
 
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+
+                <button type="button" onclick="addToCart('Table 3', 108.00, 'img/woodenproduct/download (10).jpeg')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (9).jpeg" alt="Product">
+                <img src="img\woodenproduct\download (11).jpeg" width="300px" height="300px" alt="Product">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Table 4</h5>
@@ -204,75 +237,17 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <h4>R65.00</h4>
-                </div>
-
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="img\woodenproduct\download (10).jpeg" alt="Product">
-                <div class="des">
-                    <span>The DKK Hardware</span>
-                    <h5>Table 5</h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4>R550.00</h4>
-                </div>
-
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="img\woodenproduct\download (11).jpeg" width="300px" height="300px" alt="Product">
-                <div class="des">
-                    <span>The DKK Hardware</span>
-                    <h5>Table 6</h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4>R108.00</h4>
-                </div>
-
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="img\woodenproduct\download (12).jpeg" width="300px" height="300px" alt="Product">
-                <div class="des">
-                    <span>The DKK Hardware</span>
-                    <h5>Table 7</h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                     <h4>R50.00</h4>
                 </div>
 
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+
+                <button type="button" onclick="addToCart('Table 4', 50.00, 'img/woodenproduct/download (11).jpeg')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (13).jpeg" width="250px" height="250px" alt="Product">
+                <img src="img\woodenproduct\download (12).jpeg" alt="Product">
                 <div class="des">
                     <span>The DKK Hardware</span>
-                    <h5>Table 8</h5>
+                    <h5>Chair 9</h5>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -283,12 +258,11 @@
                     <h4>R90.00</h4>
                 </div>
 
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+
+                <button type="button" onclick="addToCart('Chair 9', 90.00, 'img/woodenproduct/download (12).jpeg')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (14).jpeg" width="250px" height="250px" alt="Product">
+                <img src="img\woodenproduct\download (13).jpeg"  alt="Product">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Table 9</h5>
@@ -302,12 +276,11 @@
                     <h4>R78.00</h4>
                 </div>
 
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+
+                <button type="button" onclick="addToCart('Chair 2', 95.00, 'img/woodenproduct/download (13).png')">Add to cart</button>
             </div>
             <div class="pro">
-                <img src="img\woodenproduct\download (15).jpeg" width="250px" height="250px" alt="Product">
+                <img src="img\woodenproduct\download (14).jpeg" width="250px" height="250px" alt="Product">
                 <div class="des">
                     <span>The DKK Hardware</span>
                     <h5>Table 10</h5>
@@ -320,10 +293,7 @@
                     </div>
                     <h4>R75.00</h4>
                 </div>
-
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+                <button type="button" onclick="addToCart('Chair 2', 95.00, 'img/woodenproduct/2.png')">Add to cart</button>
             </div>
             <div class="pro">
                 <img src="img\woodenproduct\download (16).jpeg" width="250px" height="250px" alt="Product">
@@ -340,9 +310,8 @@
                     <h4>R100.00</h4>
                 </div>
 
-                <div class="icon">
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-                </div>
+
+                <button type="button">Add to cart</button>
             </div>
         </div>
     </section>
@@ -398,6 +367,9 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
+    <script src="https://www.paypal.com/sdk/js?client-id=Af05d1imY5pASdXESVPqrodcqUqd51QvZbHzK1XvlunDseisojYkjVQ-vj0vkLBiZvjIU2X5TMzOJKYr&currency=USD"></script>
 
-</html>
+
+</body >
+
+</html >

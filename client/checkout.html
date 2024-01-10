@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal JS SDK Advanced Integration</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.paypalobjects.com/webstatic/en_US/developer/docs/css/cardfields.css"
+    >
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=test&components=buttons,hosted-fields&enable-funding=paylater,venmo"
+        data-client-token="<%= clientToken %>"
+        data-sdk-integration-source="integrationbuilder_ac">
+    </script>
+  </head>
+  <body>
+    <div id="paypal-button-container" class="paypal-button-container"></div>
+   
+      <p id="result-message"></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
